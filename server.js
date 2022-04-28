@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const api = require('./routes/routes.js');
+const api = require('./routes/routes');
 
 const PORT = process.env.PORT || 3001;
 
@@ -24,6 +24,6 @@ app.all('*', (req,res) => {
     res.status(404).send('<h1>404! Page Not Found <h1>');
 });
 
-app.listen(PORT, (req, res) => {
+app.listen(PORT, () => {
     console.log(`App listening at http://localhost:${PORT}`);
 });
