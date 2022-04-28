@@ -10,6 +10,8 @@ This application uses Express.JS, Node.JS and is deployed through Heroku.
 
 ## Deployed Link
 
+https://totes-notes-taker-0428.herokuapp.com/
+
 ## Screenshots
 
 Homepage
