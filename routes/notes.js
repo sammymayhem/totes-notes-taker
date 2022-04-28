@@ -49,7 +49,7 @@ notes.post('/', (req, res) => {
             id: uuidv4(),
         };
 
-        readAndAppend(newNote, '../db/db.json');
+        readAndAppend(newNote, './db/db.json');
 
         const response = {
             status: 'success',
