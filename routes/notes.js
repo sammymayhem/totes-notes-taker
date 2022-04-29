@@ -8,18 +8,6 @@ notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-// notes.get('/:id', (req, res) => {
-//     const notesId = req.params.id;
-//     readFromFile('./db/db.json')
-//         .then((data) => JSON.parse(data))
-//         .then((json) => {
-//             const result = json.filter((notes) => notes.id === notesId);
-//             return result.length > 0
-//                 ? res.json(result)
-//                 : res.json('No notes with that ID');
-//         });
-// });
-
 notes.delete('/:id', (req, res) => {
     const notesId = req.params.id;
     readFromFile('./db/db.json')
